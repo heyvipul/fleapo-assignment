@@ -7,13 +7,14 @@
     padding: 0;
     box-sizing: border-box;   
 }
+body{
+    background: #F5F8FF; 
+}
 
 .main-div{
     width: 1440px;
-    /* width: 100%; */
-    /* height: 500px; */
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background: #F5F8FF;
 }
 
@@ -25,20 +26,6 @@
     margin-top: 23px;
     align-items: center;
 }
-
-/* .navbar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: ;
-    background-size: cover;
-    background-position: center;
-    filter: blur(10px); 
-    z-index: -1; 
-} */
 
 .navbar div:nth-child(1) > img{
     width: 130px;
@@ -86,11 +73,25 @@
     border-radius: 7.68px;
     background: #4E47FF;
     border: none;
-    /* font-family: "Raleway", sans-serif;
-    font-size: 13px; */
     font-weight: 700;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .main-div{
+        width: 500px;
+    }
+    .navbar{
+        width: 500px;
+        margin-left: 10px;
+    } 
+    .navbar div:nth-child(2){
+        display: none;
+    }  
+    .navbar div:nth-child(3) >p{
+       margin-left: -280px;
+    } 
 }
 
 /* first container  */
@@ -117,6 +118,21 @@
     color: #FFFFFF;
     margin-top: 27px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .first-container{
+        width: 300px;     
+    }
+    .first-container > div:first-child{
+        font-size: 36px;
+        margin-left: -100px; 
+    }
+    .first-container > div:nth-child(2) > button{
+        margin-left: -100px;
+    }
+
+
 }
 
 /* .second-container */
@@ -239,6 +255,31 @@
 }
 /* second-container end */
 
+@media screen and (max-width: 400px) {
+    .second-container{
+        width: 400px;
+    }
+    .second-container > p{
+        font-size: 36px; 
+    }
+    .second-container > div{
+        flex-direction: column;
+    }
+    .second-container > div > div:first-child {
+        flex-direction: column;
+    }
+    .second-container > div > .left-div {
+        flex-direction: column;
+    }
+    .second-container .left-div > .left-one {
+        flex-direction: column;
+        height: 800px;
+    }
+    .second-container .left-div > .below-one > div:first-child {
+        display: none;
+    }
+}
+
 
 /* third container  */
 .third-container{
@@ -287,6 +328,19 @@
     font-weight: 400;
     color:#8987A1;
     padding-top: 32px;
+}
+
+@media screen and (max-width: 400px) {
+    .third-container{
+        width: 400px;
+        margin-top: -10px
+    }
+    .third-container > div:nth-child(2) > p:first-child {
+        font-size: 36px;
+    }
+    .third-container > div:first-child {
+        margin-left: -100px;
+    }
 }
 
  /* third-container ends */
@@ -533,5 +587,74 @@
     cursor: pointer;
     margin-bottom: 150px;
 }
+
+
+/* eight-container */
+.eight-container{
+    width: 1250px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+.eight-container > div{
+    display: flex;
+    justify-content: space-between;
+    width: 1216px;
+    height: 398px;
+    margin: auto;
+    background: white;
+    border: 1px solid #D6DDED;
+    border-radius: 40px;
+    margin-bottom: 100px;
+}
+.eight-container > div > div:first-child{
+    margin: 84px 72px;
+    width: 356px;
+
+}
+.eight-container > div > div:first-child > img{
+    width: 187px;
+    margin-bottom: 37px;
+}
+.eight-container > div > div:first-child > .paragraph{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8987A1;
+}
+.eight-container > div > div:first-child > .paragraph-last{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8987A1;
+    margin-top: 61px;
+}
+.eight-container > div > div:nth-child(2) > .first-div {
+    display: flex;
+    width: 401px;
+    justify-content: space-between;
+    margin-top: 155px;
+    margin-right: 72px;
+}
+.eight-container > div > div:nth-child(2) > .first-div > p{
+    font-family: "Inter",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8987A1;
+}
+.eight-container > div > div:nth-child(2) > .second-div{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin: 92px 72px;
+}
+.eight-container > div > div:nth-child(2) > .second-div > div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 
 
